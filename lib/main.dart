@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
               const Text("Ansyncof 2026",
                 style: TextStyle(
                   fontSize: 42,
-                  fontFamily: "Roboto"
+                  fontFamily: "Roboto",
+                  fontWeight: FontWeight.bold,
                 ),
               ),
               const Text("Salon Virtuel de l'informatique du 27 au 29 octobre 2026",
