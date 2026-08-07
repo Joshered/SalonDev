@@ -17,24 +17,24 @@ class MyApp extends StatelessWidget {
           title: const Text("Asyncof 2026"),
         ),
         body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset("assets/images/img1.png"),
-                const Text("Asyncof2022",
-                  style: TextStyle(
-                    fontSize: 42,
-                    fontFamily: 'Roboto'
-                  ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset("assets/images/img1.png"),
+              const Text("Ansyncof 2026",
+                style: TextStyle(
+                  fontSize: 42,
+                  fontFamily: "Roboto"
                 ),
-                const Text("Salon Virtuel de l'informatique du 27 au 29 octobre 2026",
-                  style: TextStyle(
-                    fontSize: 24,
-                  ),
-                  textAlign: TextAlign.center,
-                )
-              ],
-            )
+              ),
+              const Text("Salon Virtuel de l'informatique du 27 au 29 octobre 2026",
+                style: TextStyle(
+                  fontSize: 24
+                ),
+                textAlign: TextAlign.center,
+              )
+            ],
+          ),
         ),
       ),
     );
