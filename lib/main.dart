@@ -69,7 +69,14 @@ class HomePage extends StatelessWidget {
                 padding: MaterialStatePropertyAll(EdgeInsets.all(10)),
                 backgroundColor: MaterialStatePropertyAll(Colors.green)
               ),
-              onPressed: () => ,
+              onPressed: () => {
+                Navigator.push(
+                  context,
+                  PageRouteBuilder(
+                    pageBuilder: (_, __, ___) => EventPage()
+                  )
+                )
+              },
               label: Text("Afficher le panning",
                 style: TextStyle(
                   color: Colors.white,
