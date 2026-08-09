@@ -63,17 +63,20 @@ class HomePage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            ElevatedButton(
+            Padding(padding: EdgeInsets.all(5)),
+            ElevatedButton.icon(
               style: ButtonStyle(
+                padding: MaterialStatePropertyAll(EdgeInsets.all(10)),
                 backgroundColor: MaterialStatePropertyAll(Colors.green)
               ),
-              onPressed: () => print("Click btn"),
-              child: Text("Afficher le panning",
+              onPressed: () => ,
+              label: Text("Afficher le panning",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 20
                 ),
-              )
+              ),
+              icon: Icon(Icons.calendar_month)
             )
           ],
         ),
