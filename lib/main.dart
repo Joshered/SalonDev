@@ -62,6 +62,18 @@ class HomePage extends StatelessWidget {
                 fontSize: 24
               ),
               textAlign: TextAlign.center,
+            ),
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll(Colors.green)
+              ),
+              onPressed: () => print("Click btn"),
+              child: Text("Afficher le panning",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20
+                ),
+              )
             )
           ],
         ),
