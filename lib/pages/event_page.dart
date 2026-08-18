@@ -41,7 +41,7 @@ class EventPage extends StatelessWidget {
                 leading: FlutterLogo(size: 56.0),
                 title: Text("conference 4"),
                 subtitle: Text("description"),
-                trailing: Icon(Icons.more_vert),
+                trailing: Icon(Icons.info),
               ),
             ),
           ],
