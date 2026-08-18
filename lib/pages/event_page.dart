@@ -10,7 +10,14 @@ class EventPage extends StatelessWidget {
         title: Text("Planning du salon"),
       ),
       body: Center(
-        child: Text("Prochenement disponible"),
+        child: ListView(
+          children: [
+            Text("conference 1"),
+            Text("Conference 2"),
+            Text("conference 3"),
+            Text("Conference 4"),
+          ],
+        ),
       ),
     );
   }
