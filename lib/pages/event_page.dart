@@ -12,10 +12,38 @@ class EventPage extends StatelessWidget {
       body: Center(
         child: ListView(
           children: [
-            Text("conference 1"),
-            Text("Conference 2"),
-            Text("conference 3"),
-            Text("Conference 4"),
+            Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text("conference 1"),
+                subtitle: Text("description"),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text("conference 2"),
+                subtitle: Text("description"),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text("conference 3"),
+                subtitle: Text("description"),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                leading: FlutterLogo(size: 56.0),
+                title: Text("conference 4"),
+                subtitle: Text("description"),
+                trailing: Icon(Icons.more_vert),
+              ),
+            ),
           ],
         ),
       ),
