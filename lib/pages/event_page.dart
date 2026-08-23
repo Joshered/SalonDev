@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class EventPage extends StatelessWidget {
+class EventPage extends StatefulWidget {
   const EventPage({super.key});
 
+  @override
+  State<EventPage> createState() => _EventPageState();
+}
+
+class _EventPageState extends State<EventPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,30 +23,6 @@ class EventPage extends StatelessWidget {
                 title: Text("conference 1"),
                 subtitle: Text("description"),
                 trailing: Icon(Icons.more_vert),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                leading: FlutterLogo(size: 56.0),
-                title: Text("conference 2"),
-                subtitle: Text("description"),
-                trailing: Icon(Icons.more_vert),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                leading: FlutterLogo(size: 56.0),
-                title: Text("conference 3"),
-                subtitle: Text("description"),
-                trailing: Icon(Icons.more_vert),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                leading: FlutterLogo(size: 56.0),
-                title: Text("conference 4"),
-                subtitle: Text("description"),
-                trailing: Icon(Icons.info),
               ),
             ),
           ],
