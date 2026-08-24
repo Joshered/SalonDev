@@ -9,9 +9,14 @@ void main() {
 }
 
 // classe a appeler
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,22 +27,22 @@ class MyApp extends StatelessWidget {
         body: HomePage(),
         bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.green,
-            unselectedItemColor: Colors.grey,
-            iconSize: 32,
-            elevation: 10,
-            items: const[
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  label: 'Acceuil'
-              ),
-              BottomNavigationBarItem(
-                  icon: Icon(Icons.calendar_month),
-                  label: 'Planning'
-              ),
-            ]),
+          unselectedItemColor: Colors.grey,
+          iconSize: 32,
+          elevation: 10,
+
+          items: const[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Acceuil'
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_month),
+            label: 'Planning'
+          ),
+        ]),
       ),
     );
-  }
 }
 
 
