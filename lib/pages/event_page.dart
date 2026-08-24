@@ -14,19 +14,19 @@ class _EventPageState extends State<EventPage> {
       "speaker": "Josh Yered",
       "date": "13h à 13h30",
       "subject": "Le code legacy",
-      "avatar": "lior"
+      "avatar": "img4.png"
     },
     {
       "speaker": "Tonton b",
       "date": "18h07 à 19h31",
       "subject": "efoot2017",
-      "avatar": "tonton"
+      "avatar": "images2.jpeg"
     },
     {
       "speaker": "Eliel",
       "date": "13h à 13h30",
       "subject": "Le code legacy",
-      "avatar": "lior"
+      "avatar": "images3.jpeg"
     },
   ];
 
@@ -48,7 +48,12 @@ class _EventPageState extends State<EventPage> {
 
             return Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                // leading: FlutterLogo(size: 56.0),
+                leading: SizedBox(
+                  width: 56.0,
+                  height: 56.0,
+                  child: Image.asset("assets/images/$avatar", fit: BoxFit.cover,)
+                ),
                 title: Text("$subject"),
                 subtitle: Text("$speaker"),
                 trailing: Icon(Icons.more_vert),
