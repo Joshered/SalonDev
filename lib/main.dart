@@ -1,5 +1,6 @@
 // importation
 import 'package:flutter/material.dart';
+import 'package:tuto1/pages/add_event_page.dart';
 import 'package:tuto1/pages/event_page.dart';
 import 'package:tuto1/pages/home_page.dart';
 
@@ -36,7 +37,8 @@ class _MyAppState extends State<MyApp> {
         ),
         body: [
           HomePage(),
-          EventPage()
+          EventPage(),
+          AddEventPage()
         ][_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
           // proprietes
@@ -55,6 +57,10 @@ class _MyAppState extends State<MyApp> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.calendar_month),
                 label: 'Planning'
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.add),
+                label: 'Ajout'
             ),
           ]),
       ),
