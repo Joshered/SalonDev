@@ -33,7 +33,11 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Asyncof"),
+          title: [
+            Text("Acceuil"),
+            Text("liste des conferences"),
+            Text("Formulaire"),
+          ][_currentIndex],
         ),
         body: [
           HomePage(),
