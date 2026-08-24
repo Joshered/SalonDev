@@ -7,6 +7,6 @@ class AddEventPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text("Formulair d'ajout de conference"),
-    )
+    );
   }
 }
