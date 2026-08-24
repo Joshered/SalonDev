@@ -28,6 +28,12 @@ class _EventPageState extends State<EventPage> {
       "subject": "Le code legacy",
       "avatar": "images3.jpeg"
     },
+    {
+      "speaker": "yered",
+      "date": "18h07 à 19h31",
+      "subject": "efoot2017",
+      "avatar": "images2.jpeg"
+    },
   ];
 
   @override
@@ -55,7 +61,7 @@ class _EventPageState extends State<EventPage> {
                   child: Image.asset("assets/images/$avatar", fit: BoxFit.cover,)
                 ),
                 title: Text("$subject"),
-                subtitle: Text("$speaker"),
+                subtitle: Text("$speaker ($date)"),
                 trailing: Icon(Icons.more_vert),
               ),
             );
