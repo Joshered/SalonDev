@@ -13,7 +13,11 @@ class _AddEventPageState extends State<AddEventPage> {
     return Form(
         child: Column(
           children: [
-            TextFormField()
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: 'nom conference',
+              ),
+            )
           ],
         )
     );
