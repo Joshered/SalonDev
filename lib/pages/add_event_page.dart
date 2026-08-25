@@ -21,6 +21,10 @@ class _AddEventPageState extends State<AddEventPage> {
                   hintText: 'Entrez le nom de la conference',
                   border: OutlineInputBorder()
                 ),
+              ),
+              ElevatedButton(
+                onPressed: (){},
+                child: Text("Envoyer")
               )
             ],
           )
