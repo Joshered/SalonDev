@@ -8,30 +8,49 @@ class AddEventPage extends StatefulWidget {
 }
 
 class _AddEventPageState extends State<AddEventPage> {
+  
+  final _formKey = GlobalKey<FormState>();
+  
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(20),
       child: Form(
-          child: Column(
-            children: [
-              TextFormField(
+        key: _formKey,
+        child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.only(bottom: 10),
+              child: TextFormField(
                 decoration: InputDecoration(
                   labelText: 'nom conference',
                   hintText: 'Entrez le nom de la conference',
                   border: OutlineInputBorder()
                 ),
+                validator: (value){
+                  if (value == null || value.isEmpty){
+                    return "Le champ doit etre remplis";
+                  }
+                  return null;
+                },
               ),
-              SizedBox(
-                width: double.infinity,
-                height: 50,
-                child: ElevatedButton(
-                  onPressed: (){},
-                  child: Text("Envoyer")
-                ),
-              )
-            ],
-          )
+            ),
+            SizedBox(
+              width: double.infinity,
+              height: 50,
+              child: ElevatedButton(
+                onPressed: (){
+                  if (_formKey.currentState!.validate()){
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("Envoi en cours..."))
+                    );
+                  }
+                },
+                child: Text("Envoyer")
+              ),
+            )
+          ],
+        )
       ),
     );
   }
