@@ -46,6 +46,7 @@ class _AddEventPageState extends State<AddEventPage> {
                   }
                   return null;
                 },
+                controller: conferenceNameController,
               ),
             ),
             // chamo nom conferencier
@@ -63,6 +64,7 @@ class _AddEventPageState extends State<AddEventPage> {
                   }
                   return null;
                 },
+                controller: speakerNameController,
               ),
             ),
             SizedBox(
