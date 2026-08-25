@@ -18,7 +18,8 @@ class _AddEventPageState extends State<AddEventPage> {
               TextFormField(
                 decoration: InputDecoration(
                   labelText: 'nom conference',
-                  hintText: 'Entrez le nom de la conference'
+                  hintText: 'Entrez le nom de la conference',
+                  border: OutlineInputBorder()
                 ),
               )
             ],
