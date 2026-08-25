@@ -19,6 +19,7 @@ class _AddEventPageState extends State<AddEventPage> {
         key: _formKey,
         child: Column(
           children: [
+            // nom du conference
             Container(
               margin: EdgeInsets.only(bottom: 10),
               child: TextFormField(
@@ -35,6 +36,7 @@ class _AddEventPageState extends State<AddEventPage> {
                 },
               ),
             ),
+
             SizedBox(
               width: double.infinity,
               height: 50,
@@ -44,6 +46,7 @@ class _AddEventPageState extends State<AddEventPage> {
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text("Envoi en cours..."))
                     );
+                    FocusScope.of(context).requestFocus(FocusNode());
                   }
                 },
                 child: Text("Envoyer")
