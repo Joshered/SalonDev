@@ -16,6 +16,14 @@ class _AddEventPageState extends State<AddEventPage> {
   final speakerNameController = TextEditingController();
 
   @override
+  void dispose() {
+    super.dispose();
+
+    conferenceNameController.dispose();
+    speakerNameController.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.all(20),
