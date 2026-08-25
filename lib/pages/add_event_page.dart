@@ -10,7 +10,10 @@ class AddEventPage extends StatefulWidget {
 class _AddEventPageState extends State<AddEventPage> {
   
   final _formKey = GlobalKey<FormState>();
-  
+
+  final conferenceNameController = TextEditingController();
+  final speakerNameController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Container(
