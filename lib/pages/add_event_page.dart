@@ -36,7 +36,22 @@ class _AddEventPageState extends State<AddEventPage> {
                 },
               ),
             ),
-
+            Container(
+              margin: EdgeInsets.only(bottom: 10),
+              child: TextFormField(
+                decoration: InputDecoration(
+                    labelText: 'nom du speaker',
+                    hintText: 'Entrez le nom du speaker',
+                    border: OutlineInputBorder()
+                ),
+                validator: (value){
+                  if (value == null || value.isEmpty){
+                    return "Le champ doit etre remplis";
+                  }
+                  return null;
+                },
+              ),
+            ),
             SizedBox(
               width: double.infinity,
               height: 50,
