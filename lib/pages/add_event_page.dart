@@ -10,17 +10,20 @@ class AddEventPage extends StatefulWidget {
 class _AddEventPageState extends State<AddEventPage> {
   @override
   Widget build(BuildContext context) {
-    return Form(
-        child: Column(
-          children: [
-            TextFormField(
-              decoration: InputDecoration(
-                labelText: 'nom conference',
-                hintText: 'Entrez le nom de la conference'
-              ),
-            )
-          ],
-        )
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Form(
+          child: Column(
+            children: [
+              TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'nom conference',
+                  hintText: 'Entrez le nom de la conference'
+                ),
+              )
+            ],
+          )
+      ),
     );
   }
 }
