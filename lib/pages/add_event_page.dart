@@ -81,6 +81,8 @@ class _AddEventPageState extends State<AddEventPage> {
                       const SnackBar(content: Text("Envoi en cours..."))
                     );
                     FocusScope.of(context).requestFocus(FocusNode());
+
+                    print("Ajout de la conf $confName par le speaker $speakerName");
                   }
                 },
                 child: Text("Envoyer")
