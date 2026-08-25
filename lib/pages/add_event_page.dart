@@ -11,6 +11,7 @@ class _AddEventPageState extends State<AddEventPage> {
   
   final _formKey = GlobalKey<FormState>();
 
+  // controller
   final conferenceNameController = TextEditingController();
   final speakerNameController = TextEditingController();
 
@@ -39,6 +40,7 @@ class _AddEventPageState extends State<AddEventPage> {
                 },
               ),
             ),
+            // chamo nom conferencier
             Container(
               margin: EdgeInsets.only(bottom: 10),
               child: TextFormField(
