@@ -22,9 +22,13 @@ class _AddEventPageState extends State<AddEventPage> {
                   border: OutlineInputBorder()
                 ),
               ),
-              ElevatedButton(
-                onPressed: (){},
-                child: Text("Envoyer")
+              SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: (){},
+                  child: Text("Envoyer")
+                ),
               )
             ],
           )
