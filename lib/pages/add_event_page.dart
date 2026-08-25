@@ -73,6 +73,10 @@ class _AddEventPageState extends State<AddEventPage> {
               child: ElevatedButton(
                 onPressed: (){
                   if (_formKey.currentState!.validate()){
+                    // recuperer le valeur
+                    final confName = conferenceNameController.text;
+                    final speakerName = speakerNameController.text;
+
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(content: Text("Envoi en cours..."))
                     );
