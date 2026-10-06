@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:tuto1/pages/add_event_page.dart';
 import 'package:tuto1/pages/event_page.dart';
 import 'package:tuto1/pages/home_page.dart';
+import 'package:tuto1/pages/cuntPage.dart';
 
 // E:\flutter\flutter\bin\flutter.bat --no-color run --machine --track-widget-creation --device-id=emulator-5554 --start-paused --dart-define=flutter.inspector.structuredErrors=true --devtools-server-address=http://127.0.0.1:9100 --no-enable-impeller lib\main.dart
 // methode principale
@@ -22,14 +23,7 @@ void main() {
            seedColor: Colors.blue,
          ),
        ),
-       home: Scaffold(
-         appBar: AppBar(title: Text('LukMarket')),
-         body: Center(child: Text('Joahered develloppeur')),
-         floatingActionButton: FloatingActionButton(
-             onPressed: (){},
-            child: Icon(Icons.add),
-         ),
-       ),
+       home: const CuntPage(),
      );
    }
  }
