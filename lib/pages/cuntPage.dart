@@ -13,8 +13,15 @@ class _CuntPageState extends State<CuntPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('LukMarket')),
-        body: Center(child: Text('Joahered develloppeur'))
+        appBar: AppBar(title: Text('Mon compeur')),
+        body: Center(child: Text('Joahered develloppeur $cunt_nuber')),
+        floatingActionButton: ElevatedButton(
+            onPressed: (){
+              setState(() {
+                cunt_nuber += 1;
+              });
+            }, 
+            child: Icon(Icons.add),),
       );
   }
 }
