@@ -9,25 +9,31 @@ import 'package:tuto1/pages/home_page.dart';
 void main() {
   runApp(const MyApp1());
 }
-class MyApp1 extends StatelessWidget {
-  const MyApp1({super.key});
+ class MyApp1 extends StatelessWidget {
+   const MyApp1({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Ma Boutique',
-      home: Scaffold(
-        appBar: AppBar(title: Text('LukMarkt')),
-        body: Center(child: Text('Yered concepteur')),
-        floatingActionButton: FloatingActionButton(
-            onPressed: (){},
+   @override
+   Widget build(BuildContext context) {
+     return MaterialApp(
+       debugShowCheckedModeBanner: false,
+       title: 'LukMarket',
+       theme: ThemeData(
+         colorScheme: ColorScheme.fromSeed(
+           seedColor: Colors.blue,
+         ),
+       ),
+       home: Scaffold(
+         appBar: AppBar(title: Text('LukMarket')),
+         body: Center(child: Text('Joahered develloppeur')),
+         floatingActionButton: FloatingActionButton(
+             onPressed: (){},
             child: Icon(Icons.add),
-        ),
-      ),
-    );
-  }
-}
+         ),
+       ),
+     );
+   }
+ }
+
 
 
 // classe a appeler
