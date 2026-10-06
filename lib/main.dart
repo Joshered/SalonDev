@@ -4,6 +4,7 @@ import 'package:tuto1/pages/add_event_page.dart';
 import 'package:tuto1/pages/event_page.dart';
 import 'package:tuto1/pages/home_page.dart';
 import 'package:tuto1/pages/cuntPage.dart';
+import 'package:tuto1/pages/salutation.dart';
 
 // E:\flutter\flutter\bin\flutter.bat --no-color run --machine --track-widget-creation --device-id=emulator-5554 --start-paused --dart-define=flutter.inspector.structuredErrors=true --devtools-server-address=http://127.0.0.1:9100 --no-enable-impeller lib\main.dart
 // methode principale
@@ -24,7 +25,7 @@ void main() {
        //   ),
        // ),
        theme: ThemeData(primarySwatch: Colors.green),
-       home: const CuntPage(),
+       home: const SwitchSalutation(),
      );
    }
  }
