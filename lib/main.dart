@@ -8,21 +8,22 @@ import 'package:tuto1/pages/cuntPage.dart';
 // E:\flutter\flutter\bin\flutter.bat --no-color run --machine --track-widget-creation --device-id=emulator-5554 --start-paused --dart-define=flutter.inspector.structuredErrors=true --devtools-server-address=http://127.0.0.1:9100 --no-enable-impeller lib\main.dart
 // methode principale
 void main() {
-  runApp(const MyApp1());
+  runApp(const LukangaApp());
 }
- class MyApp1 extends StatelessWidget {
-   const MyApp1({super.key});
+ class LukangaApp extends StatelessWidget {
+   const LukangaApp({super.key});
 
    @override
    Widget build(BuildContext context) {
      return MaterialApp(
        debugShowCheckedModeBanner: false,
        title: 'LukMarket',
-       theme: ThemeData(
-         colorScheme: ColorScheme.fromSeed(
-           seedColor: Colors.blue,
-         ),
-       ),
+       // theme: ThemeData(
+       //   colorScheme: ColorScheme.fromSeed(
+       //     seedColor: Colors.blue,
+       //   ),
+       // ),
+       theme: ThemeData(primarySwatch: Colors.green),
        home: const CuntPage(),
      );
    }

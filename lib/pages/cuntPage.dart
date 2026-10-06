@@ -8,21 +8,37 @@ class CuntPage extends StatefulWidget {
 }
 
 class _CuntPageState extends State<CuntPage> {
-  int cunt_nuber =0;
+  int _compteur =0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('Mon compeur')),
-        body: Center(child: Text('Joahered develloppeur $cunt_nuber')),
-        floatingActionButton: ElevatedButton(
-            onPressed: (){
-              setState(() {
-                cunt_nuber += 1;
-              });
-            }, 
-            child: Icon(Icons.add),),
-      );
+      appBar: AppBar(
+        title: Text('LukMarket', style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.store, size: 80, color: Colors.green),
+            SizedBox(height: 20),
+            Text('Bienvenue !', style: TextStyle(fontSize: 28)),
+            SizedBox(height: 20),
+            Text('Sacs ajoutés : $_compteur', style: TextStyle(fontSize: 20)),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  _compteur = _compteur + 1;
+                });
+              },
+              child: Text('Ajouter un sac'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
 
