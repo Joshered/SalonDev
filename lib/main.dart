@@ -20,6 +20,10 @@ class MyApp1 extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text('LukMarkt')),
         body: Center(child: Text('Yered concepteur')),
+        floatingActionButton: FloatingActionButton(
+            onPressed: (){},
+            child: Icon(Icons.add),
+        ),
       ),
     );
   }
