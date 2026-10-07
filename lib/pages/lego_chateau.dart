@@ -15,6 +15,7 @@ class ChateauLego extends StatelessWidget {
         //     Text('4000 FC')
         //   ],
         // ),
+
         // child: Column(
         //   children: [
         //     Text('Titre'),
@@ -22,6 +23,7 @@ class ChateauLego extends StatelessWidget {
         //     Text('Mon text')
         //   ],
         // // ),
+
         // child: Stack(
         //   children: [
         //     Container(height: 200, color: Colors.green),
@@ -32,11 +34,22 @@ class ChateauLego extends StatelessWidget {
         //   ],
         // ),
 
-        child: ListView.builder(
-          itemCount: 10,
-          itemBuilder: (context, i){
-            return ListTile(title: Text('Produit ${i+1}'));
-          }
+        // child: ListView.builder(
+        //   itemCount: 10,
+        //   itemBuilder: (context, i){
+        //     return ListTile(title: Text('Produit ${i+1}'));
+        //   }
+        // ),
+
+        child: GridView.count(
+          crossAxisCount: 2,
+          children: [
+            Icon(Icons.grass),
+            Icon(Icons.agriculture),
+            Icon(Icons.eco),
+            Icon(Icons.park),
+          ],
+
         ),
 
       )
