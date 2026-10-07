@@ -8,11 +8,18 @@ class ChateauLego extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text('Chateau Stylé')),
       body: Center(
-        child: Row(
+        // child: Row(
+        //   children: [
+        //     Icon(Icons.grass),
+        //     Text('Haricot'),
+        //     Text('4000 FC')
+        //   ],
+        // ),
+        child: Column(
           children: [
-            Icon(Icons.grass),
-            Text('Haricot'),
-            Text('4000 FC')
+            Text('Titre'),
+            Text('Sous titre'),
+            Text('Mon text')
           ],
         ),
 
