@@ -21,15 +21,22 @@ class ChateauLego extends StatelessWidget {
         //     Text('Sous titre'),
         //     Text('Mon text')
         //   ],
+        // // ),
+        // child: Stack(
+        //   children: [
+        //     Container(height: 200, color: Colors.green),
+        //     Positioned(
+        //       top: 10, left: 10,
+        //         child: Text('Promo !')
+        //     )
+        //   ],
         // ),
-        child: Stack(
-          children: [
-            Container(height: 200, color: Colors.green),
-            Positioned(
-              top: 10, left: 10,
-                child: Text('Promo !')
-            )
-          ],
+
+        child: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, i){
+            return ListTile(title: Text('Produit ${i+1}'));
+          }
         ),
 
       )
