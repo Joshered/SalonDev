@@ -15,11 +15,20 @@ class ChateauLego extends StatelessWidget {
         //     Text('4000 FC')
         //   ],
         // ),
-        child: Column(
+        // child: Column(
+        //   children: [
+        //     Text('Titre'),
+        //     Text('Sous titre'),
+        //     Text('Mon text')
+        //   ],
+        // ),
+        child: Stack(
           children: [
-            Text('Titre'),
-            Text('Sous titre'),
-            Text('Mon text')
+            Container(height: 200, color: Colors.green),
+            Positioned(
+              top: 10, left: 10,
+                child: Text('Promo !')
+            )
           ],
         ),
 
