@@ -8,6 +8,8 @@ import 'package:tuto1/pages/salutation.dart';
 import 'package:tuto1/pages/lego_chateau.dart';
 import 'package:tuto1/pages/boutique_luk.dart';
 import 'package:tuto1/pages/exercice.dart';
+import 'package:tuto1/pages/recap1.dart';
+
 
 
 // E:\flutter\flutter\bin\flutter.bat --no-color run --machine --track-widget-creation --device-id=emulator-5554 --start-paused --dart-define=flutter.inspector.structuredErrors=true --devtools-server-address=http://127.0.0.1:9100 --no-enable-impeller lib\main.dart
@@ -29,7 +31,7 @@ void main() {
        //   ),
        // ),
        theme: ThemeData(primarySwatch: Colors.green),
-       home: const Exercice(),
+       home: const Recap1(),
      );
    }
  }
