@@ -8,7 +8,7 @@ import 'package:tuto1/pages/salutation.dart';
 import 'package:tuto1/pages/lego_chateau.dart';
 import 'package:tuto1/pages/boutique_luk.dart';
 import 'package:tuto1/pages/exercice.dart';
-import 'package:tuto1/pages/recap1.dart';
+import 'package:tuto1/pages/recap11.dart';
 
 
 
@@ -31,7 +31,7 @@ void main() {
        //   ),
        // ),
        theme: ThemeData(primarySwatch: Colors.green),
-       home: const Recap1(),
+       home: const Recap11(),
      );
    }
  }
