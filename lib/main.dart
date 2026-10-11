@@ -28,7 +28,7 @@ void main() {
        title: 'LukMarket',
        theme: ThemeData(
          colorScheme: ColorScheme.fromSeed(
-             seedColor: Colors.deepPurple
+             seedColor: Colors.deepOrangeAccent
          ),
          textTheme: TextTheme(
 
