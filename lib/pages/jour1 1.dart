@@ -14,13 +14,8 @@ class _JourUnState extends State<JourUn> {
       appBar: AppBar(
         title: Text('Jeux d\'incrementation'),
         centerTitle: true,
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        // titleTextStyle: TextStyle(color : Colors.white, fontSize: 24),
-        elevation: 10,
-        leading: Icon(Icons.menu),
-        actions: [IconButton(onPressed: (){}, icon: Icon(Icons.search))],
-      )
-
+        leading: IconButton(onPressed: (){}, icon: Icon(Icons.menu)),
+      ),
     );
   }
 }
