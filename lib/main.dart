@@ -9,6 +9,7 @@ import 'package:tuto1/pages/lego_chateau.dart';
 import 'package:tuto1/pages/boutique_luk.dart';
 import 'package:tuto1/pages/exercice.dart';
 import 'package:tuto1/pages/recap11.dart';
+import 'package:tuto1/pages/jour1 1.dart';
 
 
 
@@ -25,13 +26,15 @@ void main() {
      return MaterialApp(
        debugShowCheckedModeBanner: false,
        title: 'LukMarket',
-       // theme: ThemeData(
-       //   colorScheme: ColorScheme.fromSeed(
-       //     seedColor: Colors.blue,
-       //   ),
-       // ),
-       theme: ThemeData(primarySwatch: Colors.green),
-       home: const Recap11(),
+       theme: ThemeData(
+         colorScheme: ColorScheme.fromSeed(
+             seedColor: Colors.deepPurple
+         ),
+         textTheme: TextTheme(
+
+         )
+       ),
+       home: const JourUn(),
      );
    }
  }
