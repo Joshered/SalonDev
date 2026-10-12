@@ -81,8 +81,15 @@ class _JourUnState extends State<JourUn> {
 
           // forme
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(20))),
-
         ),
+        body : Container(
+          child: Text("Mon jeu demare"),
+          padding: EdgeInsets.all(16),
+          margin: EdgeInsets.all(8),
+          width: double.infinity,
+          decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary, borderRadius: BorderRadius.circular(12)),
+        )
+
       )
     );
   }
