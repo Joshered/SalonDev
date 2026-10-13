@@ -10,6 +10,7 @@ import 'package:tuto1/pages/boutique_luk.dart';
 import 'package:tuto1/pages/exercice.dart';
 import 'package:tuto1/pages/recap11.dart';
 import 'package:tuto1/pages/jour1 1.dart';
+import 'package:tuto1/design/design1 - incrementation.dart';
 
 
 
@@ -34,7 +35,7 @@ void main() {
 
          )
        ),
-       home: const JourUn(),
+       home: const Design1(),
      );
    }
  }

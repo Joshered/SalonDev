@@ -82,15 +82,61 @@ class _JourUnState extends State<JourUn> {
           // forme
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(20))),
         ),
-        body : Container(
-          child: Text("Mon jeu demare"),
-          padding: EdgeInsets.all(16),
-          margin: EdgeInsets.all(8),
-          width: double.infinity,
-          decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary, borderRadius: BorderRadius.circular(12)),
-        )
 
+        //OPTION A
+        // body : Container(
+        //   child: Text("Mon jeu demare"),
+        //   padding: EdgeInsets.all(16),
+        //   margin: EdgeInsets.all(8),
+        //   width: double.infinity,
+        //   decoration: BoxDecoration(color: Theme.of(context).colorScheme.primary, borderRadius: BorderRadius.circular(12)),
+        // )
+
+        //OPTION B
+        // body: Column(
+        //   children: [
+        //     Text('Test 1'),
+        //     Text('Test 1'),
+        //     Text('Test 1')
+        //   ],
+        //   mainAxisAlignment: MainAxisAlignment.start,
+        //   crossAxisAlignment: CrossAxisAlignment.center,
+        //   mainAxisSize: MainAxisSize.max,
+        // )
+
+        // OPTION 3
+        body: ListView.builder(
+          itemCount: 4,
+          scrollDirection: Axis.vertical,
+          padding: EdgeInsets.all(10),
+          itemBuilder: (context,index){
+            return Card(
+              child: ListTile(
+                leading: Icon(Icons.school),
+                title: Text('test'),
+                subtitle: Text('test $index'),
+                trailing: Icon(Icons.verified),
+                onTap: (){},
+              ),
+            );
+          }
+        ),
+
+
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: (){},
+        //   child: Icon(Icons.add),
+        //   elevation: 4,
+        //   tooltip: 'Ajouter',
+        // ),
+        //
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: (){},
+          label: Text("Scanner QR"),
+          icon: Icon(Icons.qr_code)
+        )
       )
     );
+
   }
 }
